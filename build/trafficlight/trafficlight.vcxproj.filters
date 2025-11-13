@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\Lights.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\Road.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\Lights.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\Road.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{11DCC6CF-6DAE-3EC6-A9ED-2F8D943E9346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D32FED39-A492-3D45-BA59-7AB75581C234}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

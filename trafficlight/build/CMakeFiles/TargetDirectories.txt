@@ -1,0 +1,3 @@
+C:/Users/Sergey/Documents/GitHub/mp2-lab1-set/trafficlight/build/CMakeFiles/trafficlight.dir
+C:/Users/Sergey/Documents/GitHub/mp2-lab1-set/trafficlight/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Sergey/Documents/GitHub/mp2-lab1-set/trafficlight/build/CMakeFiles/ZERO_CHECK.dir

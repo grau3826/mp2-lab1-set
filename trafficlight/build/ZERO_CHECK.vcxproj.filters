@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\build\CMakeFiles\d8218115c01921390fc9e56ee208b014\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F2B75B5B-D09B-3F8D-BEBD-757D91C03111}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
