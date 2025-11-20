@@ -22,7 +22,7 @@ TBitField::TBitField(int len) : BitLen(len)
     if (len < 0) {
         throw out_of_range("n < 0");
     }
-    MemLen = (len + sizeof(TELEM) - 1) / sizeof(TELEM);
+    MemLen = (len + sizeof(TELEM)*8 - 1) >> shiftSize;
     pMem = new TELEM[MemLen];
     for (int i = 0; i < MemLen; i++) {
         pMem[i] = 0;
@@ -147,20 +147,22 @@ TBitField TBitField::operator&(const TBitField &bf) // операция "и"
 
     return res;
 }
-
-TBitField TBitField::operator~(void) // отрицание
+//FIX
+TBitField TBitField::operator~(void) // отрицание  //отрицание над числом и применить маску которая обнулила бы незначащие биты
 {
     TBitField res(BitLen);
 
-    for (int i = 0; i < BitLen; i++) {
-        if (GetBit(i) == 0) {
-            res.SetBit(i);
-        }
-        else {
-            res.ClrBit(i);
-        }
+    for (int i = 0; i < res.MemLen - 1; i++) { //перебираем все элементы со значащими битами
+        res.pMem[i] = ~pMem[i]; //инвертируем элемент полностью
     }
 
+    //работаем с последним элементом
+    int mask = (1 << (BitLen % (sizeof(TELEM) * 8))) - 1; //sizeof(TELEM) * 8 - количество бит в одном элементе TELEM
+                                                          //Bitlen % ...  - количество значащих бит в последнем элементе
+                                                          // (1 << n) - 1   - первый n бит 1 остальные 0
+    if (mask == 0) mask = ~0; //если все биты значащие
+
+    res.pMem[res.MemLen - 1] = (~pMem[res.MemLen - 1]) & mask;
     return res;
 }
 
