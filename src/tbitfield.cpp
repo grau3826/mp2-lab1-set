@@ -152,13 +152,13 @@ TBitField TBitField::operator~(void) // отрицание
 {
     TBitField res(BitLen);
 
-    for (int i = 0; i < MemLen; i++) {
-        res.pMem[i] = ~pMem[i];
-    }
-    int extraBits = BitLen % (sizeof(TELEM) * 8);
-    if (extraBits > 0) {
-        TELEM mask = (TELEM(1) << extraBits) - 1;
-        res.pMem[MemLen - 1] &= mask;
+    for (int i = 0; i < BitLen; i++) {
+        if (GetBit(i) == 0) {
+            res.SetBit(i);
+        }
+        else {
+            res.ClrBit(i);
+        }
     }
 
     return res;
