@@ -56,7 +56,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\include;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\gtest;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\include;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\gtest;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -80,10 +80,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\include;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\gtest;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\include;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\gtest;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\include;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\gtest;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\include;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\gtest;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -110,7 +110,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\include;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\gtest;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\include;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\gtest;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -135,10 +135,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\include;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\gtest;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\include;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\gtest;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\include;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\gtest;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\include;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\gtest;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight;C:\Users\Sergey\Documents\GitHub\mp2-lab1-set\trafficlight\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
