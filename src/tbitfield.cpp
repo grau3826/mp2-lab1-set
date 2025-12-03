@@ -148,7 +148,7 @@ TBitField TBitField::operator&(const TBitField &bf) // операция "и"
     return res;
 }
 //FIX
-TBitField TBitField::operator~(void) // отрицание  //отрицание над числом и применить маску которая обнулила бы незначащие биты
+TBitField TBitField::operator~(void) // отрицание  //применить маску которая обнулила бы незначащие биты
 {
     TBitField res(BitLen);
 
@@ -159,7 +159,7 @@ TBitField TBitField::operator~(void) // отрицание  //отрицание
     //работаем с последним элементом
     int mask = (1 << (BitLen % (sizeof(TELEM) * 8))) - 1; //sizeof(TELEM) * 8 - количество бит в одном элементе TELEM
                                                           //Bitlen % ...  - количество значащих бит в последнем элементе
-                                                          // (1 << n) - 1   - первый n бит 1 остальные 0
+                                                          // (1 << n) - 1   - первые n бит 1 остальные 0
     if (mask == 0) mask = ~0; //если все биты значащие
 
     res.pMem[res.MemLen - 1] = (~pMem[res.MemLen - 1]) & mask;

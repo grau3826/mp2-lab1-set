@@ -124,9 +124,6 @@ TSet TSet::operator~(void) // дополнение
 {
     TSet res(MaxPower);
     res.BitField = ~BitField;
-    for (int i = MaxPower; i < res.BitField.GetLength(); i++) {
-        res.BitField.ClrBit(i);
-    }
     return res;
 }
 
